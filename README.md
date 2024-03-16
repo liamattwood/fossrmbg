@@ -6,7 +6,7 @@ This website is writen using Flask for the web server and rembg for the library 
 
 I started this project as I found there were only a few websites that removed backgrounds and none of them were open source.
 
-The one I was using previously: (remove.bg)[https://remove.bg] was propriatary and had a expensive API. I knew I could do better.
+The one I was using previously: [remove.bg](https://remove.bg) was propriatary and had a expensive API. I knew I could do better.
 
 ## Demo
 
@@ -30,4 +30,4 @@ pip install -r requirements.txt
 python main.py
 ```
 
-I've even attached a `dockerfile` so you can easily use containers to host this!
+I've even attached a [dockerfile](dockerfile) so you can easily use containers to host this!
