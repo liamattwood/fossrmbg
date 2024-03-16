@@ -13,11 +13,15 @@ The one I was using previously: (remove.bg)[https://remove.bg] was propriatary a
 In this demo I upload a simple image of some flowers in a vase with an annoying blue background.
 I simply upload the image from my machine and click the button. The website then displays the image with the removed and transperent background.
 
-[screenshot](demo/demo.gif)
+[Demo GIF](demo/demo.gif)
 
 Original image:
 
-[screenshot](demo/flowers.png)
+[Original Image](demo/flowers.png)
+
+Image with removed background:
+
+[New Image](demo/removed.png)
 
 ## Setup 
 
