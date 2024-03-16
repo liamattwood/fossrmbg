@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Background Remover</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.3/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-blue-200 p-8">
+    <h1 class="text-4xl font-bold text-center mb-8">Background Remover</h1>
+    <p class="text-center mb-4">Written in Python using rembg lib by Liam Attwood</p>
+    <div class="max-w-md mx-auto bg-white p-8 rounded shadow-md">
+        <h1 class="font-bold mb-4">Upload an image to remove the background</h1>
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <input type="file" name="image" accept="image/*" class="border border-gray-300 p-2 mb-4">
+            <img src="" id="output" class="mt-4" style="display:none;">
+            <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded">Remove Background</button>
+        </form>
+    </div>
+
+    <!-- Add JavaScript to display the processed image -->
+    <script>
+        const input = document.querySelector('input[type=file]');
+        const output = document.getElementById('output');
+
+        input.addEventListener('change', function() {
+            const file = input.files[0];
+            const url = URL.createObjectURL(file);
+            output.src = url;
+            output.style.display = 'block';
+        });
+    </script>
+</body>
+</html>
